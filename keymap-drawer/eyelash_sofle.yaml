@@ -62,9 +62,9 @@ layers:
   - $$mdi:mouse-left-click-outline$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - layer2
-  - {t: '[', s: '{'}
-  - {t: ']', s: '}'}
   - $$mdi:apple-keyboard-shift$$
+  - {t: ']', s: '}'}
+  - {t: ']', s: '}'}
   layer1:
   - {t: '`', s: '~'}
   - F1
