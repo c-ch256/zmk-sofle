@@ -70,11 +70,11 @@
 
         layer0 {
             bindings = <
-&kp ESC        &kp N1     &kp N2        &kp N3        &kp N4  &kp N5       &kp UP_ARROW     &kp N6     &kp N7  &kp N8           &kp N9            &kp N0             &kp BACKSPACE
-&kp TAB        &kp Q      &kp W         &kp E         &kp R   &kp T        &kp DOWN_ARROW   &kp Y      &kp U   &kp I            &kp O             &kp P              &kp BSLH
-&kp CAPS       &kp A      &kp S         &kp D         &kp F   &kp G        &kp LEFT_ARROW   &kp H      &kp J   &kp K            &kp L             &kp SEMI           &kp APOS
-&kp LSHFT      &kp Z      &kp X         &kp C         &kp V   &kp B        &kp RIGHT_ARROW  &kp N      &kp M   &kp COMMA        &kp DOT           &kp FSLH           &kp DEL
-&kp LG(LS(S))  &kp LCTRL  &kp LEFT_GUI  &kp LEFT_ALT  &mo 1   &kp SPACE    &mkp LCLK        &kp ENTER  &mo 2   &kp RIGHT_SHIFT  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
+&kp ESC        &kp N1     &kp N2        &kp N3        &kp N4  &kp N5       &kp UP_ARROW     &kp N6     &kp N7  &kp N8     &kp N9   &kp N0         &kp BACKSPACE
+&kp TAB        &kp Q      &kp W         &kp E         &kp R   &kp T        &kp DOWN_ARROW   &kp Y      &kp U   &kp I      &kp O    &kp P          &kp BSLH
+&kp CAPS       &kp A      &kp S         &kp D         &kp F   &kp G        &kp LEFT_ARROW   &kp H      &kp J   &kp K      &kp L    &kp SEMI       &kp APOS
+&kp LSHFT      &kp Z      &kp X         &kp C         &kp V   &kp B        &kp RIGHT_ARROW  &kp N      &kp M   &kp COMMA  &kp DOT  &kp FSLH       &kp DEL
+&kp LG(LS(S))  &kp LCTRL  &kp LEFT_GUI  &kp LEFT_ALT  &mo 1   &kp SPACE    &mkp LCLK        &kp SPACE  &mo 2   &kp ENTER  &none    &kp LS(ENTER)
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PLUS) LC(MINUS)>;
@@ -83,11 +83,11 @@
 
         layer_1 {
             bindings = <
-&kp GRAVE      &kp F1           &kp F2           &kp F3           &kp F4           &kp F5             &mmv MOVE_UP     &none      &none     &none       &none      &kp UNDERSCORE    &kp PLUS
-&kp TILDE      &kp F6           &kp F7           &kp F8           &kp F9           &kp F10            &mmv MOVE_DOWN   &kp PG_UP  &kp END   &kp UP      &kp HOME   &kp MINUS         &kp EQUAL
-&none          &kp F11          &none            &trans           &rgb_ug RGB_HUI  &rgb_ug RGB_HUD    &mmv MOVE_LEFT   &kp PG_DN  &kp LEFT  &kp DOWN    &kp RIGHT  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
-&trans         &rgb_ug RGB_OFF  &rgb_ug RGB_ON   &rgb_ug RGB_EFF  &rgb_ug RGB_EFR  &rgb_ug RGB_SPI    &mmv MOVE_RIGHT  &none      &none     &kp INSERT  &none      &none             &trans
-&kp LS(LG(S))  &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &trans           &trans           &trans             &mkp LCLK        &trans     &trans    &trans      &trans     &trans
+&kp GRAVE      &kp F1           &kp F2           &kp F3           &kp F4           &kp F5             &mmv MOVE_UP     &none   &none     &none     &none      &kp LEFT_BRACKET  &kp RIGHT_BRACKET
+&kp TILDE      &kp F6           &kp F7           &kp F8           &kp F9           &kp F10            &mmv MOVE_DOWN   &none   &none     &kp UP    &none      &kp MINUS         &kp EQUAL
+&none          &kp F11          &none            &trans           &rgb_ug RGB_HUI  &rgb_ug RGB_HUD    &mmv MOVE_LEFT   &none   &kp LEFT  &kp DOWN  &kp RIGHT  &kp ASTERISK      &kp PLUS
+&trans         &rgb_ug RGB_OFF  &rgb_ug RGB_ON   &rgb_ug RGB_EFF  &rgb_ug RGB_EFR  &rgb_ug RGB_SPI    &mmv MOVE_RIGHT  &none   &none     &none     &none      &none             &trans
+&kp LS(LG(S))  &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &trans           &trans           &trans             &mkp LCLK        &trans  &trans    &trans    &trans     &trans
             >;
 
             display-name = "layer1";
@@ -98,7 +98,7 @@
             bindings = <
 &kp TILDE  &none            &none              &none          &none       &none          &mmv MOVE_UP     &none          &none             &none                 &none                  &none                 &trans
 &trans     &kp EXCLAMATION  &kp AT_SIGN        &kp HASH       &kp DOLLAR  &kp PERCENT    &mmv MOVE_DOWN   &kp CARET      &kp AMPERSAND     &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp UNDER             &kp PLUS
-&trans     &kp QUESTION     &kp DOUBLE_QUOTES  &kp SEMICOLON  &none       &trans         &mmv MOVE_LEFT   &kp ASTERISK   &kp COLON         &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LBRC              &kp RBRC
+&trans     &kp QUESTION     &kp DOUBLE_QUOTES  &kp SEMICOLON  &none       &trans         &mmv MOVE_LEFT   &none          &kp COLON         &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LBRC              &kp RBRC
 &trans     &sys_reset       &kp SQT            &bootloader    &trans      &trans         &mmv MOVE_RIGHT  &kp LESS_THAN  &kp GREATER_THAN  &kp SLASH             &kp PIPE               &kp NON_US_BACKSLASH  &trans
 &trans     &trans           &trans             &trans         &trans      &trans         &mkp LCLK        &trans         &trans            &trans                &trans                 &trans
             >;
