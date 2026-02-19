@@ -74,7 +74,7 @@
 &kp TAB        &kp Q      &kp W         &kp E         &kp R   &kp T        &kp DOWN_ARROW   &kp Y      &kp U   &kp I          &kp O      &kp P             &kp BSLH
 &kp CAPS       &kp A      &kp S         &kp D         &kp F   &kp G        &kp LEFT_ARROW   &kp H      &kp J   &kp K          &kp L      &kp SEMICOLON     &kp SQT
 &kp LSHFT      &kp Z      &kp X         &kp C         &kp V   &kp B        &kp RIGHT_ARROW  &kp N      &kp M   &kp COMMA      &kp DOT    &kp LEFT_BRACKET  &kp RIGHT_BRACKET
-&kp LG(LS(S))  &kp LCTRL  &kp LEFT_GUI  &kp LEFT_ALT  &mo 1   &kp SPACE    &mkp LCLK        &kp ENTER  &mo 2   &kp RS(ENTER)  &kp RCTRL  &kp DEL
+&kp LG(LS(S))  &kp LCTRL  &kp LEFT_GUI  &kp LEFT_ALT  &mo 1   &kp SPACE    &mkp LCLK        &kp ENTER  &mo 2   &kp RS(ENTER)  &kp LC(C)  &kp DEL
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PLUS) LC(MINUS)>;
@@ -87,7 +87,7 @@
 &kp TILDE      &kp F6           &kp F7           &kp F8           &kp F9           &kp F10            &mmv MOVE_DOWN   &none   &kp SQT   &kp UP    &none      &kp MINUS         &kp EQUAL
 &none          &kp F11          &none            &trans           &rgb_ug RGB_HUI  &rgb_ug RGB_HUD    &mmv MOVE_LEFT   &none   &kp LEFT  &kp DOWN  &kp RIGHT  &kp ASTERISK      &kp PLUS
 &trans         &rgb_ug RGB_OFF  &rgb_ug RGB_ON   &rgb_ug RGB_EFF  &rgb_ug RGB_EFR  &rgb_ug RGB_SPI    &mmv MOVE_RIGHT  &none   &none     &none     &none      &none             &trans
-&kp LS(LG(S))  &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &trans           &trans           &trans             &mkp LCLK        &trans  &trans    &trans    &trans     &trans
+&kp LS(LG(S))  &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &trans           &trans           &trans             &mkp LCLK        &trans  &trans    &trans    &kp LC(V)  &trans
             >;
 
             display-name = "layer1";
