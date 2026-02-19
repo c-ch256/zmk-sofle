@@ -168,8 +168,8 @@ layers:
   - ':'
   - (
   - )
-  - '{'
-  - '}'
+  - {t: /, s: '?'}
+  - '|'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:backup-restore$$', type: bootloader}
   - {t: '''', s: '"'}
@@ -179,8 +179,8 @@ layers:
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
   - <
   - '>'
-  - {t: /, s: '?'}
-  - '|'
+  - '{'
+  - '}'
   - \
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
