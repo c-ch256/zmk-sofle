@@ -63,7 +63,7 @@ layers:
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - layer2
   - {t: 'Sft+$$mdi:keyboard-return$$', type: enter}
-  - $$mdi:apple-keyboard-control$$
+  - Ctl+C
   - $$mdi:backspace-reverse-outline$$
   layer1:
   - {t: '`', s: '~'}
@@ -128,7 +128,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - Ctl+V
   - {t: '$$mdi:transfer$$', type: trans}
   layer2:
   - '~'
