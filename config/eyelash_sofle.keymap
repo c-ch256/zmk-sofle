@@ -70,11 +70,11 @@
 
         layer0 {
             bindings = <
-&kp ESC         &kp N1     &kp N2        &kp N3        &kp N4  &kp N5       &kp UP_ARROW     &kp N6     &kp N7  &kp N8           &kp N9     &kp N0            &kp BACKSPACE
-&kp LEFT_SHIFT  &kp Q      &kp W         &kp E         &kp R   &kp T        &kp DOWN_ARROW   &kp Y      &kp U   &kp I            &kp O      &kp P             &kp BSLH
-&kp TAB         &kp A      &kp S         &kp D         &kp F   &kp G        &kp LEFT_ARROW   &kp H      &kp J   &kp K            &kp L      &kp SEMICOLON     &kp SQT
-&kp CLCK        &kp Z      &kp X         &kp C         &kp V   &kp B        &kp RIGHT_ARROW  &kp N      &kp M   &kp COMMA        &kp DOT    &kp LEFT_BRACKET  &kp RIGHT_BRACKET
-&kp LG(LS(S))   &kp LCTRL  &kp LEFT_GUI  &kp LEFT_ALT  &mo 1   &kp SPACE    &mkp LCLK        &kp ENTER  &mo 2   &kp RIGHT_SHIFT  &kp LC(C)  &kp SLASH
+&kp TAB           &kp N1     &kp N2        &kp N3        &kp N4  &kp N5       &kp UP_ARROW     &kp N6     &kp N7  &kp N8           &kp N9     &kp N0            &kp BACKSPACE
+&kp LEFT_SHIFT    &kp Q      &kp W         &kp E         &kp R   &kp T        &kp DOWN_ARROW   &kp Y      &kp U   &kp I            &kp O      &kp P             &kp BSLH
+&kp ESC           &kp A      &kp S         &kp D         &kp F   &kp G        &kp LEFT_ARROW   &kp H      &kp J   &kp K            &kp L      &kp SEMICOLON     &kp SQT
+&kp LS(LEFT_ALT)  &kp Z      &kp X         &kp C         &kp V   &kp B        &kp RIGHT_ARROW  &kp N      &kp M   &kp COMMA        &kp DOT    &kp LEFT_BRACKET  &kp RIGHT_BRACKET
+&kp LG(LS(S))     &kp LCTRL  &kp LEFT_GUI  &kp LEFT_ALT  &mo 1   &kp SPACE    &mkp LCLK        &kp ENTER  &mo 2   &kp RIGHT_SHIFT  &kp LC(C)  &kp SLASH
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PLUS) LC(MINUS)>;
@@ -83,8 +83,8 @@
 
         layer_1 {
             bindings = <
-&kp GRAVE      &kp F1           &kp F2           &kp F3           &kp F4           &kp F5             &mmv MOVE_UP     &none   &none     &none     &none      &none         &none
-&kp TILDE      &kp F6           &kp F7           &kp F8           &kp F9           &kp F10            &mmv MOVE_DOWN   &none   &kp SQT   &kp UP    &none      &kp MINUS     &kp EQUAL
+&kp GRAVE      &kp F1           &kp F2           &kp F3           &kp F4           &kp F5             &mmv MOVE_UP     &none   &none     &none     &none      &none         &kp TILDE
+&kp CAPS       &kp F6           &kp F7           &kp F8           &kp F9           &kp F10            &mmv MOVE_DOWN   &none   &kp SQT   &kp UP    &none      &kp MINUS     &kp EQUAL
 &none          &kp F11          &none            &trans           &rgb_ug RGB_HUI  &rgb_ug RGB_HUD    &mmv MOVE_LEFT   &none   &kp LEFT  &kp DOWN  &kp RIGHT  &kp ASTERISK  &kp PLUS
 &trans         &rgb_ug RGB_OFF  &rgb_ug RGB_ON   &rgb_ug RGB_EFF  &rgb_ug RGB_EFR  &rgb_ug RGB_SPI    &mmv MOVE_RIGHT  &none   &none     &none     &none      &none         &trans
 &kp LS(LG(S))  &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &trans           &trans           &trans             &mkp LCLK        &trans  &trans    &trans    &kp LC(V)  &trans
