@@ -74,7 +74,7 @@
 &kp TAB         &kp Q         &kp W         &kp E   &kp R      &kp T        &kp DOWN_ARROW   &kp Y      &kp U             &kp I              &kp O    &kp P             &kp BSLH
 &kp CAPS        &kp A         &kp S         &kp D   &kp F      &kp G        &kp LEFT_ARROW   &kp H      &kp J             &kp K              &kp L    &kp SEMICOLON     &kp SQT
 &kp LEFT_SHIFT  &kp Z         &kp X         &kp C   &kp V      &kp B        &kp RIGHT_ARROW  &kp N      &kp M             &kp COMMA          &kp DOT  &kp SLASH         &kp GRAVE
-&kp LG(LS(S))   &kp LEFT_ALT  &kp LEFT_GUI  &mo 1   &kp LCTRL  &kp SPACE    &mkp LCLK        &kp ENTER  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &mo 2    &kp LS(LEFT_ALT)
+&kp LG(LS(S))   &kp LEFT_ALT  &kp LEFT_GUI  &mo 2   &kp LCTRL  &kp SPACE    &mkp LCLK        &kp ENTER  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &mo 1    &kp LS(LEFT_ALT)
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PLUS) LC(MINUS)>;
@@ -96,11 +96,11 @@
 
         layer_2 {
             bindings = <
-&none   &none            &none        &none        &none       &none          &mmv MOVE_UP     &none          &none             &none                 &none                  &none                 &kp DELETE
-&trans  &kp EXCLAMATION  &kp AT_SIGN  &kp HASH     &kp DOLLAR  &kp PERCENT    &mmv MOVE_DOWN   &kp CARET      &kp AMPERSAND     &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &none                 &none
-&trans  &kp QUESTION     &none        &none        &none       &trans         &mmv MOVE_LEFT   &kp SEMICOLON  &kp COLON         &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SLASH             &kp PIPE
-&trans  &sys_reset       &none        &bootloader  &trans      &trans         &mmv MOVE_RIGHT  &kp LESS_THAN  &kp GREATER_THAN  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp NON_US_BACKSLASH  &trans
-&trans  &trans           &trans       &trans       &trans      &trans         &mkp LCLK        &trans         &trans            &trans                &trans                 &trans
+&none   &none       &none   &none        &none   &none     &mmv MOVE_UP     &none   &none         &none         &none   &none   &kp DELETE
+&trans  &none       &none   &none        &none   &none     &mmv MOVE_DOWN   &none   &kp KP_MINUS  &kp KP_EQUAL  &none   &none   &none
+&trans  &none       &none   &none        &none   &trans    &mmv MOVE_LEFT   &none   &kp UNDER     &kp PLUS      &none   &none   &none
+&trans  &sys_reset  &none   &bootloader  &trans  &trans    &mmv MOVE_RIGHT  &none   &none         &none         &none   &none   &trans
+&trans  &trans      &trans  &trans       &trans  &trans    &mkp LCLK        &trans  &trans        &trans        &trans  &trans
             >;
 
             display-name = "layer2";
